@@ -1,0 +1,36 @@
+GET http://localhost:8081/book
+Accept:application/json
+
+###
+GET http://localhost:8081/book/2
+Accept:application/json
+
+###
+POST http://localhost:8081/book
+Content-Type:application/json
+
+{
+  "title": "软件工程",
+  "author": "李军国",
+  "publicationDate": null,
+  "price": 100,
+  "id": 20
+}
+
+###
+PUT http://localhost:8081/book
+Content-Type: application/json
+
+{
+  "title": "软件工程",
+  "author": "zhangsan",
+  "publicationDate": null,
+  "price": 50,
+  "id": 15
+}
+
+###
+DELETE http://localhost:8081/book/20
+Content-Type: application/json
+
+###
